@@ -11,12 +11,29 @@ body {
 
 .rect {
   display: flex;
-  flex-shrink: 0;
-  margin: 2rem, 2rem, 0;
-  width: 98vw;
-  height: 98vh;
+  margin: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  height: 90vh;
   border: 0.1rem solid white;
   background: none;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin: 0.5rem;
+}
+
+footer b {
+  color: #FFDDC0;
+}
+
+footer c {
+  color: #C3C7F4;
 }
 
 /* Header */
