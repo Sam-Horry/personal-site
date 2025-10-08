@@ -19,6 +19,8 @@ body {
   background: none;
 }
 
+/* Header */
+
 header {
   justify-content: space-between;
   flex-direction: column;
@@ -27,7 +29,7 @@ header {
 
 .logo {
   display: inline-flex;
-  color: white;
+  color: #FFDDC0;
   margin-left: 1rem;
 }
 
@@ -44,4 +46,32 @@ header {
 .secondary {
   color: grey;
   margin-left: 1rem;
+}
+
+.navigation {
+  display: inline-flex;
+  font: inherit;
+  border: none;
+  background-color: black;
+  color: #C3C7F4;
+  margin-left: 1rem;
+  padding: 0.5rem 0.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.navigation a {
+  background-color: black;
+}
+
+.navigation.active {
+  background-color: #323232;
+  color: #C3C7F4;
+}
+
+.navigation:hover {
+  background-color: #323232;
+  color: #C3C7F4;
 }
