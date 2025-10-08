@@ -2,7 +2,7 @@
 
 This is the repo for my first ever website, handwritten in HTML and CSS without the use of any AI or vibe-coding tools.
 
-You can visit this site on GitHub Pages [here.](https://sam-horry.github.io/personal-site/index.html)
+You can visit this site on GitHub Pages [here](https://sam-horry.github.io/personal-site/index.html).
 
 ## Inspiration
 
