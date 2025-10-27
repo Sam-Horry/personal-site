@@ -16,7 +16,7 @@ body {
   margin-top: 1rem;
   padding: 0.5rem;
   min-height: 90vh;
-  border: 0.1rem solid white;
+  border: 0.1rem solid #FFDDC0;
   background: none;
   flex-grow: 1;
 }
@@ -110,6 +110,7 @@ pre {
   padding: 0 1rem;
   max-width: 50rem;
   margin: 0 auto;
+  width: 95%;
 }
 
 .main h1 {
@@ -126,7 +127,77 @@ pre {
   margin-top: 1rem;
 }
 
+.main h3 {
+  color: #FFDDC0;
+}
+
 .main p {
   color: #C3C7F4;
   margin: 0.5rem 0;
+  border: thin;
+  border-style: none none none solid;
+  border-color: white;
+  border-width: 1px;
+  padding: 0.5rem;
+  padding-left: 1rem;
+}
+
+/* Accordian */
+
+.accordian {
+  max-width: 50rem;
+  flex-wrap: wrap;
+  background-color: black;
+  color: #FFDDC0;
+  border: none;
+  outline: none;
+  font: inherit;
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 1rem 0;
+}
+
+.panel {
+  background-color: black;
+  border: thin;
+  border-style: none none none solid;
+  border-color: white;
+  border-width: 1px;
+  padding: 0.5rem;
+  padding-top: 0;
+  padding-left: 1rem;
+  display: none;
+  margin-bottom: 0.5rem;
+}
+
+.panel p {
+  border: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.panel h1 {
+  margin-top: 0;
+}
+
+.active,
+.accordian:hover {
+  background-color: #323232;
+}
+
+/* Contact page */
+
+.main.contact {
+  color: white;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.main.contact b {
+  color: #C3C7F4;
+}
+
+.main.contact p {
+  border: none;
 }

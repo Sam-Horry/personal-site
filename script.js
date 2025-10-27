@@ -1,3 +1,4 @@
+// Managing the keyboard navigation between pages
 document.addEventListener('keydown', function (event) {
   switch (event.key) {
     case '1':
@@ -14,3 +15,21 @@ document.addEventListener('keydown', function (event) {
       break;
   }
 });
+
+// Making the accordians
+var acc = document.getElementsByClassName("accordian");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+      this.innerHTML = this.innerHTML.replace("△", "▽");
+    } else {
+      panel.style.display = "block";
+      this.innerHTML = this.innerHTML.replace("▽", "△");
+    }
+  });
+}
