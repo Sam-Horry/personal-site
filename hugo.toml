@@ -1,0 +1,8 @@
+baseURL = "/"
+languageCode = "en-gb"
+title = "My Website"
+
+disableKinds = ["taxonomy", "term"]
+
+[markup.goldmark.renderer]
+unsafe = true

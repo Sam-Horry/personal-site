@@ -142,49 +142,6 @@ pre {
   padding-left: 1rem;
 }
 
-/* Accordian */
-
-.accordian {
-  max-width: 50rem;
-  flex-wrap: wrap;
-  background-color: black;
-  color: #FFDDC0;
-  border: none;
-  outline: none;
-  font: inherit;
-  font-size: 2rem;
-  font-weight: 800;
-  margin: 1rem 0;
-}
-
-.panel {
-  background-color: black;
-  border: thin;
-  border-style: none none none solid;
-  border-color: white;
-  border-width: 1px;
-  padding: 0.5rem;
-  padding-top: 0;
-  padding-left: 1rem;
-  display: none;
-  margin-bottom: 0.5rem;
-}
-
-.panel p {
-  border: none;
-  padding: 0;
-  margin-bottom: 0;
-}
-
-.panel h1 {
-  margin-top: 0;
-}
-
-.active,
-.accordian:hover {
-  background-color: #323232;
-}
-
 /* Contact page */
 
 .main.contact {
@@ -200,4 +157,33 @@ pre {
 
 .main.contact p {
   border: none;
+}
+
+/* Blog */
+
+.post-link {
+  display: block;
+  text-decoration: none;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.post-link:hover {
+  background-color: #323232;
+}
+
+.post-date {
+  color: #C3C7F4;
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0.25rem 0 0.5rem;
+}
+
+.post-link p {
+  border: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
