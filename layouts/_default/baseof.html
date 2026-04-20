@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>My Website</title>
+  <link rel="stylesheet" href="{{ "style.css" | relURL }}">
+  <link rel="icon" href="{{ "favicon-32x32.png" | relURL }}">
+  <script src="{{ "script.js" | relURL }}" defer></script>
+</head>
+
+<body>
+  <div class="rect">
+    {{ partial "header.html" . }}
+    <div class="main{{ with .Params.mainClass }} {{ . }}{{ end }}">
+      {{ block "main" . }}{{ end }}
+    </div>
+  </div>
+  {{ partial "footer.html" . }}
+  <script>
+    document.addEventListener('keydown', function(event) {
+      switch (event.key) {
+        case '1': window.location.href = '/'; break;
+        case '2': window.location.href = '/blog/'; break;
+        case '3': window.location.href = '/skills/'; break;
+        case '4': window.location.href = '/contact/'; break;
+      }
+    });
+  </script>
+</body>
+
+</html>

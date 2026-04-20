@@ -1,0 +1,20 @@
+<header>
+  <pre class="logo">
+    ███████╗ █████╗ ███╗ &nbsp;&nbsp;███╗
+    ██╔════╝██╔══██╗████╗ ████║
+    ███████╗███████║██╔████╔██║
+    ╚════██║██╔══██║██║╚██╔╝██║
+    ███████║██║ &nbsp;██║██║ ╚═╝ ██║
+    ╚══════╝╚═╝ &nbsp;╚═╝╚═╝ &nbsp;&nbsp;&nbsp;&nbsp;╚═╝
+  </pre>
+  <div class="about-card">
+    <p class="primary"><br />Name <br />Location <br />GitHub <br />Editors</p>
+    <p class="secondary"><br />Sam Horry <br />London, England <br />@Sam-Horry <br />Neovim + JetBrains</p>
+  </div>
+  <div>
+    <a class="navigation{{ if .IsHome }} active{{ end }}" href="{{ "/" | relURL }}">(1) Home</a>
+    <a class="navigation{{ if eq .Section "blog" }} active{{ end }}" href="{{ "/blog/" | relURL }}">(2) Blog</a>
+    <a class="navigation{{ if and .File (eq .File.TranslationBaseName "skills") }} active{{ end }}" href="{{ "/skills/" | relURL }}">(3) Skills</a>
+    <a class="navigation{{ if and .File (eq .File.TranslationBaseName "contact") }} active{{ end }}" href="{{ "/contact/" | relURL }}">(4) Contact</a>
+  </div>
+</header>
