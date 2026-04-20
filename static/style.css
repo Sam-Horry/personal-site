@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=JetBrains Mono');
+@import url('https://fonts.bunny.net/css?family=jetbrains-mono:400,700&display=swap');
 
 * {
   font-size: 16px;
@@ -167,6 +167,11 @@ pre {
   color: inherit;
   margin: 1rem 0;
   width: 100%;
+}
+
+.post-link:visited {
+  color: inherit;
+  text-decoration: none;
 }
 
 .post-link:hover {
