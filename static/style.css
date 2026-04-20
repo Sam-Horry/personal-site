@@ -164,6 +164,7 @@ pre {
 .post-link {
   display: block;
   text-decoration: none;
+  color: inherit;
   margin: 1rem 0;
   width: 100%;
 }
@@ -179,7 +180,7 @@ pre {
   margin: 0.25rem 0 0.5rem;
 }
 
-.post-link p {
+.post-link > p {
   border: none;
   margin: 0;
   padding: 0;
