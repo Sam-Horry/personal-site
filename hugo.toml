@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-gb"
-title = "My Website"
+title = "Samuel Horry"
 
 disableKinds = ["taxonomy", "term"]
 
