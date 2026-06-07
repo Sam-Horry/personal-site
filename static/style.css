@@ -142,6 +142,53 @@ pre {
   padding-left: 1rem;
 }
 
+/* Ordered lists */
+
+.main ol {
+  color: #C3C7F4;
+  margin: 0.5rem 0;
+  padding-left: 2rem;
+  border: none;
+  counter-reset: list-counter;
+}
+
+.main ol li {
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  margin: 0.5rem 0;
+  counter-increment: list-counter;
+  border: none;
+}
+
+.main ol li::marker {
+  content: counter(list-counter) ". ";
+  color: #C3C7F4;
+}
+
+.main ol li p {
+  border: none;
+  padding-left: 0;
+}
+
+/* Unordered lists */
+
+.main ul {
+  color: #C3C7F4;
+  margin: 0.5rem 0;
+  padding-left: 2rem;
+  border: none;
+}
+
+.main ul li {
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  margin: 0.5rem 0;
+  border: none;
+}
+
+.main ul li p {
+  border: none;
+  padding-left: 0;
+}
+
 /* Contact page */
 
 .main.contact {
@@ -185,7 +232,7 @@ pre {
   margin: 0.25rem 0 0.5rem;
 }
 
-.post-link > p {
+.post-link>p {
   border: none;
   margin: 0;
   padding: 0;
