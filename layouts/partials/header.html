@@ -1,15 +1,10 @@
 <header>
-  <pre class="logo">
-    ███████╗ █████╗ ███╗ &nbsp;&nbsp;███╗
-    ██╔════╝██╔══██╗████╗ ████║
-    ███████╗███████║██╔████╔██║
-    ╚════██║██╔══██║██║╚██╔╝██║
-    ███████║██║ &nbsp;██║██║ ╚═╝ ██║
-    ╚══════╝╚═╝ &nbsp;╚═╝╚═╝ &nbsp;&nbsp;&nbsp;&nbsp;╚═╝
-  </pre>
-  <div class="about-card">
-    <p class="primary"><br />Name <br />Location <br />GitHub <br />Editors</p>
-    <p class="secondary"><br />Sam Horry <br />London, England <br />@Sam-Horry <br />Neovim + JetBrains</p>
+ <div class="header-top">
+    <img class="logo" src="{{ "/logotransparent.png" | relURL }}">
+    <div class="about-card">
+      <p class="primary"><br />Name <br />Location <br />GitHub <br />Editors</p>
+      <p class="secondary"><br />Sam Horry <br />London, England <br />@Sam-Horry <br />Neovim + JetBrains</p>
+    </div>
   </div>
   <div>
     <a class="navigation{{ if .IsHome }} active{{ end }}" href="{{ "/" | relURL }}">(1) Home</a>
