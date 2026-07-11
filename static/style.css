@@ -1,7 +1,5 @@
-@import url('https://fonts.bunny.net/css?family=jetbrains-mono:400,700&display=swap');
-
-* {
-  font-size: 16px;
+html {
+  font-size: 100%;
 }
 
 body {
@@ -73,6 +71,11 @@ pre {
 .secondary {
   color: grey;
   margin-left: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .navigation {
@@ -240,7 +243,70 @@ pre {
   border: none;
   margin: 0;
   padding: 0;
-  white-space: nowrap;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  header {
+    padding: 0 1rem;
+  }
+
+  .header-top {
+    flex-direction: column;
+  }
+
+  .logo {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    margin: 0 0;
+    margin-top: 1rem;
+  }
+
+  .about-card {
+    margin-top: 0;
+    margin-left: 0;
+    flex-wrap: wrap;
+  }
+
+  .about-card .secondary {
+    margin-left: 1rem;
+  }
+
+  .about-card p {
+    margin: 0;
+    padding: 0.25rem 0;
+  }
+
+  .about-card p {
+    margin: 0;
+    padding: 0.25rem 0;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+  }
+
+  .navigation {
+    padding: 0.6rem 0.5rem;
+    margin-left: 0;
+    margin-bottom: 0.25rem;
+    min-height: 2.75rem;
+    box-sizing: border-box;
+  }
+
+  .main h1 {
+    font-size: 1.6rem;
+  }
+
+  .kbd-hint {
+    display: none;
+  }
 }
