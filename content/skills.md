@@ -1,17 +1,13 @@
 ---
 title: "Skills"
+mainClass: "skills"
 ---
 
-# # Skills
+<h1 class="cursor"># Skills</h1>
 
-Docker
-
-Git
-
-HTML
-
-Java
-
-Linux
-
-JavaScript
+- Docker
+- Git
+- HTML
+- Java
+- Linux
+- JavaScript

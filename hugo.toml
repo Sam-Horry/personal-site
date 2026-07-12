@@ -1,8 +1,16 @@
 baseURL = "/"
-languageCode = "en-gb"
+locale = "en-gb"
 title = "Samuel Horry"
 
 disableKinds = ["taxonomy", "term"]
 
-[markup.goldmark.renderer]
-unsafe = true
+[params]
+  description = "Personal site and blog of Sam Horry — CS student, Linux enthusiast, and aspiring developer based in London."
+  productionURL = "https://example.com"
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+
+  [markup.goldmark.renderer]
+  unsafe = true
