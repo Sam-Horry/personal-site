@@ -1,5 +1,5 @@
 ---
-title: "Hijacking my university's compute to run AI models"
+title: "Utilising my university's compute to run AI models"
 date: 2026-06-07
 ---
 ## Introduction
