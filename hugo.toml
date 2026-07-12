@@ -8,5 +8,9 @@ disableKinds = ["taxonomy", "term"]
   description = "Personal site and blog of Sam Horry — CS student, Linux enthusiast, and aspiring developer based in London."
   productionURL = "https://example.com"
 
-[markup.goldmark.renderer]
-unsafe = true
+[markup]
+  [markup.highlight]
+    noClasses = false
+
+  [markup.goldmark.renderer]
+  unsafe = true

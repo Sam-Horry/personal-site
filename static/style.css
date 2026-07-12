@@ -316,3 +316,48 @@ pre {
     display: none;
   }
 }
+
+/* External links */
+
+.main a[href^="http"]::after {
+  content: "\00a0↗";
+  font-size: 0.8em;
+}
+
+/* Inline code */
+
+.main p code,
+.main li code {
+  background-color: #323232;
+  color: #FFDDC0;
+  padding: 0.15rem 0.35rem;
+  font-size: 0.9em;
+}
+
+/* Skills page */
+
+.main.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+.main.skills li {
+  border: 1px solid #C3C7F4;
+  padding: 0.4rem 0.8rem;
+  color: #C3C7F4;
+  margin: 0;
+}
+
+/* Terminal cursor */
+
+.main .welcome::after {
+  content: "_";
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
