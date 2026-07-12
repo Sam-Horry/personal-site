@@ -153,6 +153,19 @@ pre {
   line-height: 1.7;
 }
 
+.main a {
+  color: #C3C7F4;
+  text-decoration: underline;
+}
+
+.main a:visited {
+  color: #C3C7F4;
+}
+
+.main a:hover {
+  background-color: #323232;
+}
+
 /* Ordered lists */
 
 .main ol {
@@ -221,7 +234,7 @@ pre {
 
 /* Blog */
 
-.post-link {
+a.post-link {
   display: block;
   text-decoration: none;
   color: inherit;
@@ -353,11 +366,13 @@ pre {
 
 /* Terminal cursor */
 
-.main .welcome::after {
+.main .cursor::after {
   content: "_";
   animation: blink 1s step-end infinite;
 }
 
 @keyframes blink {
-  50% { opacity: 0; }
+  50% {
+    opacity: 0;
+  }
 }

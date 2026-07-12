@@ -3,7 +3,7 @@ title: "Skills"
 mainClass: "skills"
 ---
 
-# # Skills
+<h1 class="cursor"># Skills</h1>
 
 - Docker
 - Git

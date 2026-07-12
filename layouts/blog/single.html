@@ -1,5 +1,5 @@
 {{ define "main" }}
-<h1># {{ .Title }}</h1>
+<h1 class="cursor"># {{ .Title }}</h1>
 <h3 class="post-date">{{ .Date.Format "02 January 2006" }} &mdash; {{ .ReadingTime }} min read</h3>
 {{ .Content }}
 {{ end }}

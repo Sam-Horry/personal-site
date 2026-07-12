@@ -2,7 +2,7 @@
 title: "Home"
 ---
 
-<h1 class="welcome"># Welcome</h1>
+<h1 class="cursor"># Welcome</h1>
 
 To navigate this site, you can use the keyboard to press the number corresponding to the page shown on the navigation bar!
 
